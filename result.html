@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Summarizer - Result</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <h1>Text Summarizer - Result</h1>
+    </header>
+    
+    <!-- Summary section -->
+    <section class="summary">
+        <h2>Summary</h2>
+        <p>{{ summary }}</p>
+    </section>
+
+    <!-- Sentiment analysis section -->
+    <section class="sentiment">
+        <h2>Sentiment Analysis</h2>
+        <p>Sentiment: {{ sentiment }}</p>
+    </section>
+
+    <!-- Named Entity Recognition section -->
+    <section class="ner">
+        <h2>Named Entity Recognition</h2>
+        <ul>
+            {% for entity in entities %}
+                <li>{{ entity }}</li>
+            {% endfor %}
+        </ul>
+    </section>
+
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; Jey Prabu 2023 Text Summarizer</p>
+    </footer>
+</body>
+</html>
