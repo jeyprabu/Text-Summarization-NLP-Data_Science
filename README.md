@@ -9,3 +9,5 @@ This requires the following modules :
 4. TextBlob
 5. NumPy
 6. Scikit-Learn
+
+Run the "app.py" file and save the rest as in the repository.
