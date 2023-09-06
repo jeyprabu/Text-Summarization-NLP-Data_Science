@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Summarizer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <h1>Welcome to Text Summarizer</h1>
+    </header>
+    
+    <!-- Hero section -->
+    <section class="hero">
+        <p>Enter your text below and click 'Summarize' to get a summary.</p>
+        <form method="post">
+            <textarea name="input_text" rows="6"  cols="60" placeholder="Enter your text here"></textarea><br><br>
+            <label for="method">Select Summarization Method:</label>
+            <select name="method">
+                <option value="frequency">Frequency</option>
+                <option value="tfidf">TF-IDF</option>
+                <option value="cosine">Cosine Similarity</option>
+            </select><br><br>
+            <label for="ratio">Summary Ratio (0.1 - 1.0):</label>
+            <input type="text" name="ratio" value="0.2">
+            <input type="submit" value="Summarize">
+        </form>
+    </section>
+
+    <!-- Display elements -->
+    <section class="display-elements">
+        <!-- Display elements go here -->
+    </section>
+
+    <!-- Form elements -->
+    <section class="form-elements">
+        <!-- Form elements go here -->
+    </section>
+
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; Jey Prabu 2023 Text Summarizer</p>
+    </footer>
+</body>
+</html>
