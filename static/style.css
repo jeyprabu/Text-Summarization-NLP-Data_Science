@@ -1,503 +1,21 @@
-/* Reset some default styles */
-/*
 body, h1, h2, p, ul, li {
     margin: 0;
     padding: 0;
 }
-
-
-body {
-    background-color: #f4f4f4;
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-
-.container {
-    max-width: 800px;
-    padding: 20px;
-    background-color: #ffffff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-}
-
-
-header {
-    background-color: #49a6e0;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-}
-
-
-.hero {
-    background-color: #ffc107;
-    padding: 20px;
-    border-bottom: 2px solid #f7ca18;
-}
-
-.hero h1 {
-    font-size: 28px;
-    margin-bottom: 15px;
-    color: #333;
-}
-
-
-.form-container {
-    background-color: #e0e0e0;
-    padding: 20px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
-
-.form-container label {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
-}
-
-.form-container textarea,
-.form-container select,
-.form-container input[type="text"],
-.form-container input[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    font-size: 16px;
-}
-
-.form-container select {
-    height: 40px;
-}
-
-.form-container input[type="submit"] {
-    background-color: #49a6e0;
-    color: #fff;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    font-size: 18px;
-}
-
-.form-container input[type="submit"]:hover {
-    background-color: #357ebd;
-}
-
-
-.result {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 5px;
-    margin-top: 20px;
-}
-
-.result h2 {
-    font-size: 24px;
-    margin-bottom: 15px;
-    color: #333;
-}
-
-
-.sentiment, .ner {
-    margin-top: 20px;
-}
-
-.sentiment h2, .ner h2 {
-    font-size: 22px;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    border-radius: 0 0 5px 5px;
-}
-*/
-/* 
-body, h1, h2, p, ul, li {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    background-color: #f4f4f4;
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-}
-
-header {
-    background-color: #ff5733;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    width: 100%;
-}
-
-.container {
-    max-width: 800px;
-    width: 100%;
-    background-color: #ffffff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    margin-top: 20px;
-}
-
-.hero {
-    background-color: #ffdc00;
-    padding: 20px;
-    border-bottom: 2px solid #ffd700;
-}
-
-.hero h1 {
-    font-size: 28px;
-    margin-bottom: 15px;
-    color: #333;
-}
-
-.form-container {
-    background-color: #dfe6e9;
-    padding: 20px;
-}
-
-.form-container label {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
-}
-
-.form-container textarea,
-.form-container select,
-.form-container input[type="text"],
-.form-container input[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    font-size: 16px;
-}
-
-.form-container select {
-    height: 40px;
-}
-
-.form-container input[type="submit"] {
-    background-color: #ff5733;
-    color: #fff;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    font-size: 18px;
-}
-
-.form-container input[type="submit"]:hover {
-    background-color: #ff4500;
-}
-
-.result {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 5px;
-    margin-top: 20px;
-}
-
-.result h2 {
-    font-size: 24px;
-    margin-bottom: 15px;
-    color: #333;
-}
-
-.sentiment, .ner {
-    margin-top: 20px;
-}
-
-.sentiment h2, .ner h2 {
-    font-size: 22px;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    width: 100%;
-    position: sticky;
-    bottom: 0;
-}*/
-/* Reset some default styles */
-/*
-body, h1, h2, p, ul, li {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    background-color: #f4f4f4;
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-header {
-    background-color: #ff5733;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    width: 100%;
-}
-
-.container {
-    max-width: 800px;
-    width: 100%;
-    background-color: #ffffff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    margin-top: 20px;
-    flex: 1; 
-}
-
-.hero {
-    background-color: #ffdc00;
-    padding: 20px;
-    border-bottom: 2px solid #ffd700;
-}
-
-.hero h1 {
-    font-size: 28px;
-    margin-bottom: 15px;
-    color: #333;
-}
-
-.form-container {
-    background-color: #dfe6e9;
-    padding: 20px;
-}
-
-.form-container label {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
-}
-
-.form-container textarea,
-.form-container select,
-.form-container input[type="text"],
-.form-container input[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    font-size: 16px;
-}
-
-.form-container select {
-    height: 40px;
-}
-
-.form-container input[type="submit"] {
-    background-color: #ff5733;
-    color: #fff;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    font-size: 18px;
-}
-
-.form-container input[type="submit"]:hover {
-    background-color: #ff4500;
-}
-
-.result {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 5px;
-    margin-top: 20px;
-}
-
-.result h2 {
-    font-size: 24px;
-    margin-bottom: 15px;
-    color: #333;
-}
-
-.sentiment, .ner {
-    margin-top: 20px;
-}
-
-.sentiment h2, .ner h2 {
-    font-size: 22px;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    width: 100%;
-    position: sticky;
-    bottom: 0;
-}
-
-*/
-/*
-body, h1, h2, p, ul, li {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    background-color: #f4f4f4;
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    justify-content: center; 
-}
-
-header {
-    background-color: #ff5733;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    width: 100%;
-}
-
-.container {
-    max-width: 800px;
-    width: 100%;
-    background-color: #ffffff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    margin-top: 20px;
-    flex: 1; 
-    
-}
-
-.hero {
-    background-color: #ffdc00;
-    padding: 20px;
-    border-bottom: 2px solid #ffd700;
-    float:center;
-    align-items: center;
-}
-
-.hero h1 {
-    font-size: 28px;
-    margin-bottom: 15px;
-    color: #333;
-}
-
-.form-container {
-    background-color: #dfe6e9;
-    padding: 20px;
-}
-
-.form-container label {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
-}
-
-.form-container textarea,
-.form-container select,
-.form-container input[type="text"],
-.form-container input[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    font-size: 16px;
-   
-}
-
-.form-container select {
-    height: 40px;
-}
-
-.form-container input[type="submit"] {
-    background-color: #ff5733;
-    color: #fff;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    font-size: 18px;
-}
-
-.form-container input[type="submit"]:hover {
-    background-color: #ff4500;
-}
-
-.result {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 5px;
-    margin-top: 20px;
-}
-
-.result h2 {
-    font-size: 24px;
-    margin-bottom: 15px;
-    color: #333;
-}
-
-.sentiment, .ner {
-    margin-top: 20px;
-}
-
-.sentiment h2, .ner h2 {
-    font-size: 22px;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    width: 100%;
-}
-*/
-
-/* Reset some default styles */
-body, h1, h2, p, ul, li {
-    margin: 0;
-    padding: 0;
-}
-
-/* Set a background color for the body */
+
 body {
     background-color: #000000;
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center vertically */
-    align-items: center; /* Center horizontally */
+    justify-content: center; 
+    align-items: center;
     min-height: 97vh;
     position: relative;
     max-width: 98.5%;
     color: white;
 }
-
-/* Header styles */
+
 header {
     background-color: #1600dd;
     color: #fff;
@@ -505,10 +23,9 @@ header {
     padding: 20px;
     width: 100%;
     position: absolute;
-    top: 0; /* Stick to the top */
+    top: 0;
 }
-
-/* Center container */
+
 .container {
     max-width: 800px;
     width: 95%;
@@ -516,10 +33,9 @@ header {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     margin-top: 20px;
-    flex: 1; /* Fill available vertical space */
+    flex: 1; 
 }
-
-/* Hero section styles */
+
 .hero {
     background-color: #ffdc00;
     padding: 20px;
@@ -533,8 +49,7 @@ header {
     color: #333;
     
 }
-
-/* Form container styles */
+
 .form-container {
     background-color: #dfe6e9;
     padding: 20px;
@@ -573,8 +88,7 @@ header {
 .form-container input[type="submit"]:hover {
     background-color: #ff4500;
 }
-
-/* Result section styles */
+
 .result {
     background-color: #f9f9f9;
     padding: 20px;
@@ -587,8 +101,7 @@ header {
     margin-bottom: 15px;
     color: #333;
 }
-
-/* Sentiment and NER section styles */
+
 .sentiment, .ner {
     margin-top: 20px;
 }
@@ -598,8 +111,7 @@ header {
     margin-bottom: 10px;
     color: #333;
 }
-
-/* Footer styles */
+
 footer {
     background-color: #333;
     color: #fff;
