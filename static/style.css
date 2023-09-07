@@ -30,7 +30,7 @@ header {
     max-width: 800px;
     width: 95%;
     background-color: #ffffff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     border-radius: 5px;
     margin-top: 20px;
     flex: 1; 
