@@ -1,46 +1,30 @@
-import os
-import spacy
-from flask import Flask, render_template, request, redirect, url_for
-from summarizer import generate_summary 
-import requests
-from textblob import TextBlob
-
+from flask import Flask, render_template, request
+from summarizer import text_summarize, sentiment_analysis, word_cloud  
 app = Flask(__name__)
-
-nlp = spacy.load("en_core_web_sm")
-
-def extract_entities(text):
-    doc = nlp(text)
-    entities = [(ent.text, ent.label_) for ent in doc.ents]
-    return entities
-
-def perform_sentiment_analysis(text):
-    analysis = TextBlob(text)
-    if analysis.sentiment.polarity > 0:
-        return "Positive"
-    elif analysis.sentiment.polarity < 0:
-        return "Negative"
-    else:
-        return "Neutral"
 
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/')
 def index():
-    if request.method == 'POST':
-        input_text = request.form.get('input_text')
-        method = request.form.get('method')
-        ratio = float(request.form.get('ratio'))
-        
-        try:
-            summary = generate_summary(input_text, method=method, ratio=ratio)
-            sentiment = perform_sentiment_analysis(input_text)
-            entities = extract_entities(input_text) 
-            return render_template('result.html', summary=summary, sentiment=sentiment, entities=entities)
-        except Exception as e:
-            error_message = str(e)
-            return render_template('index.html', error_message=error_message)
+    return render_template('index.html', result='')
 
-    return render_template('index.html')
+@app.route('/analyze', methods=['POST'])
+def analyze():
+    text = request.form['text']
+    action = request.form['action']
+    answer=None
+    if action == 'summarize':
+        answer = 'Summarized Text'
+        result = text_summarize(text)
+
+    elif action == 'sentiment':
+        answer = 'Sentiment Analysis'
+        result = sentiment_analysis(text)
+        
+    elif action == 'wordcloud':
+        answer = 'Word Cloud'
+        result = word_cloud(text)
+
+    return render_template('result.html', display = answer, result=result)
 
 if __name__ == '__main__':
     app.run(debug=True)
