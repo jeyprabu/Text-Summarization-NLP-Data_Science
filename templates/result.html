@@ -3,33 +3,18 @@
 <head>
     <title>Text Summarizer - Result</title>
     <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='icons.png') }}">
 </head>
-<body>
     <header>
-        <h1>Text Summarizer - Result</h1>
+        <h1>Welcome to Text Summarizer</h1>
     </header>
-    
-    <section class="summary">
-        <h2>Summary</h2>
-        <p>{{ summary }}</p>
-    </section>
-
-    <section class="sentiment">
-        <h2>Sentiment Analysis</h2>
-        <p>Sentiment: {{ sentiment }}</p>
-    </section>
-
-    <section class="ner">
-        <h2>Named Entity Recognition</h2>
-        <ul>
-            {% for entity in entities %}
-                <li>{{ entity }}</li>
-            {% endfor %}
-        </ul>
-    </section>
-
-    <footer>
-        <p>&copy; Jey Prabu 2023 Text Summarizer</p>
-    </footer>
-</body>
+    <body>
+        <div class="answer">
+        <h1>{{display}}</h1>
+        <p><b>{{ result }}</b></p>
+        </div>
+        <footer>
+            <p>&copy; Jey Prabu 2023 Text Summarizer</p>
+        </footer>
+    </body>
 </html>
