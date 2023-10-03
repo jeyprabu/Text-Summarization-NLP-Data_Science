@@ -2,20 +2,32 @@ body, h1, h2, p, ul, li {
     margin: 0;
     padding: 0;
 }
-
 body {
     background-color: #000000;
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center; 
-    align-items: center;
+    align-items: center; 
     min-height: 97vh;
     position: relative;
     max-width: 98.5%;
     color: white;
+    border: 1% solid black;
 }
-
+.answer {
+    border: 5px solid white;
+    height: 50%;
+    width: 65%;
+    float: center;
+    padding: 10px;
+    color: gray;
+    text-align: center;
+}
+.answer h1 {
+    text-align: center;
+    color: white;
+}
 header {
     background-color: #1600dd;
     color: #fff;
@@ -23,71 +35,61 @@ header {
     padding: 20px;
     width: 100%;
     position: absolute;
-    top: 0;
+    top: 0; 
 }
-
 .container {
-    max-width: 800px;
-    width: 95%;
+    max-width: 900px;
+    width: 100%;
     background-color: #ffffff;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     margin-top: 20px;
-    flex: 1; 
+    flex: 1;
 }
-
 .hero {
-    background-color: #ffdc00;
+    min-width: 400px;
+    min-height: 250px;
+    border-radius: 5px;
+    background-color: #2895b1;
     padding: 20px;
-    border-bottom: 2px solid #ffd700;
-    border-radius: 10px;
+    text-align: center;
 }
 
-.hero h1 {
-    font-size: 28px;
-    margin-bottom: 15px;
-    color: #333;   
-}
-
-.form-container {
-    background-color: #dfe6e9;
-    padding: 20px;
+form {
+    display: inline-block;
+    text-align: left;
 }
 
-.form-container label {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
-}
-
-.form-container textarea,
-.form-container select,
-.form-container input[type="text"],
-.form-container input[type="submit"] {
-    width: 100%;
+textarea {
+    width: 95%;
     padding: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+select {
+    padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 3px;
-    font-size: 16px;
+    border-radius: 5px;
 }
 
-.form-container select {
-    height: 40px;
-}
-
-.form-container input[type="submit"] {
-    background-color: #ff5733;
-    color: #fff;
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #010844;
+    color: white;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
-    font-size: 18px;
 }
 
-.form-container input[type="submit"]:hover {
-    background-color: #ff4500;
+input[type="submit"]:hover {
+    background-color: #01084477;
 }
-
+
+
+
+
 .result {
     background-color: #f9f9f9;
     padding: 20px;
@@ -100,25 +102,16 @@ header {
     margin-bottom: 15px;
     color: #333;
 }
-
-.sentiment, .ner {
-    margin-top: 20px;
-}
 
-.sentiment h2, .ner h2 {
-    font-size: 22px;
-    margin-bottom: 10px;
-    color: #333;
-}
-
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 10px;
-    width: 101%;
+    width: 101.5%;
     position: absolute;
     bottom: 0; 
     justify-content: center;
     margin:0;
 }
+
